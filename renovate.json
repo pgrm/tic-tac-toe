@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     "config:recommended",
     "schedule:daily",
     ":configMigration",
@@ -21,7 +21,9 @@
   },
   "packageRules": [
     {
-      "matchFileNames": ["android/**"],
+      "matchFileNames": [
+        "android/**"
+      ],
       "enabled": false
     }
   ]
