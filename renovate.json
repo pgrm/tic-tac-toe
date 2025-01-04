@@ -21,7 +21,7 @@
   },
   "packageRules": [
     {
-      "matchPaths": ["android/.*"],
+      "matchFileNames": ["android/**"],
       "enabled": false
     }
   ]
