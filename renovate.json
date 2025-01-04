@@ -1,6 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": [
+    "config:base",
+    "config:best-practices",
+    "group:all",
+    "schedule:daily",
+    ":automergeAll",
+    ":automergePr",
+    ":automergeRequireAllStatusChecks",
+    ":rebaseStalePrs"
+  ],
+  "patch": {
+    "minimumReleaseAge": "3 days"
+  },
+  "minor": {
+    "minimumReleaseAge": "7 days"
+  },
+  "major": {
+    "minimumReleaseAge": "14 days"
+  },
   "packageRules": [
     {
       "matchPaths": ["android/.*"],
